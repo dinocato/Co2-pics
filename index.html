@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Carbon Emissions Rechner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="carbon-calculator">
+        <h1>🌍 Website Carbon Emissions Rechner</h1>
+        
+        <!-- Input Section -->
+        <div class="input-section">
+            <label for="domainInput">Website Domain:</label>
+            <input type="text" id="domainInput" placeholder="z.B. example.com" />
+            <button id="calculateBtn">Berechnen</button>
+        </div>
+
+        <!-- Result Section -->
+        <div id="result"></div>
+
+        <!-- Environmental Impact Section -->
+        <div class="umweltfolgen-container" id="umweltfolgen" style="display: none;">
+            <h3>Umweltfolgen</h3>
+            <p id="emissionsSummary"></p>
+            
+            <div class="umweltfolgen-images">
+                <!-- Regenwald -->
+                <div class="impact-item">
+                    <img src="https://github.com/dinocato/Co2-pics/blob/main/Lizard.svg?raw=true" alt="Regenwald">
+                    <p>Verlust von <strong id="rainforest">0</strong> m² Regenwald</p>
+                </div>
+
+                <!-- Arctic -->
+                <div class="impact-item">
+                    <img src="https://github.com/dinocato/Co2-pics/blob/main/icebear.svg?raw=true" alt="Arctic">
+                    <p>Schmelze von <strong id="arctic">0</strong> m² arktischem Meereis</p>
+                </div>
+
+                <!-- Ocean -->
+                <div class="impact-item">
+                    <img src="https://github.com/dinocato/Co2-pics/blob/main/Fish.svg?raw=true" alt="Ozeanwasser">
+                    <p>Versauerung von <strong id="ocean">0</strong> % Ozeanwasser</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
